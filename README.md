@@ -1,6 +1,6 @@
-# 
+# Alex's Portfolio
 
-_ fork of zaduma an Astro starter template for understated personal websites _
+_a fork of zaduma an Astro starter template for understated personal websites_
 
 **Built with:**
 
