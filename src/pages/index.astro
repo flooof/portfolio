@@ -17,29 +17,23 @@ posts.sort((a, b) => {
     new Date(a.frontmatter.date).getTime()
   );
 });
+
+const title = "alexn • home";
+
 ---
 
 <BaseLayout
-  title="zaduma"
+  title={title}
   description="Astro starter template for understated personal websites using Solid.js, Tailwind CSS, and MDX."
 >
-  <h1 slot="header-content" class="text-gray-600 dark:text-gray-500">zaduma</h1>
+  <h1 slot="header-content" class="text-gray-600 dark:text-gray-500">alexn</h1>
   <main class="py-10 zaduma-prose">
     <Paragraph>
-      <small class="text-gray-600 dark:text-gray-500"
-        >IPA /zaˈdu.ma/ — reverie, musing</small
-      >
       <br />
-       is an Astro starter template for understated personal websites
-    </Paragraph>
-    <Paragraph class="mt-6">
-      Learn about it by reading the articles below, take a look at the
-      <Link href="https://github.com/hasparus/zaduma">readme</Link>, or boldly
-      <Link href="https://github.com/hasparus/zaduma/generate">
-        {"create a new repository"}
-      </Link>. I wish you a pleasant journey.
+       Hey there, I'm Alex Nguyen. A Student from Vietnam studying engineering at SSIS.
     </Paragraph>
   </main>
+  <h2>Projects</h2>
   <ul>
     {
       posts.map(({ frontmatter }) => {
